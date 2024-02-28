@@ -26,8 +26,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
-    background-color: var(--primaryColor)
+    height: 90px;
+    background-color: var(--primaryColor);
+    z-index: 100;
 }
 
 .nav-bar ul {
@@ -74,7 +75,7 @@ header {
 #sign-up {
     border-radius: 40px;
     border: 1px solid var(--secondColor);
-    padding: 5px 30px;
+    padding: 5px 20px;
     margin: 0;
     cursor: pointer;
 }
@@ -87,16 +88,14 @@ header {
 #log-in:hover{
     transition: .8s;
     background-color: transparent;
-
 }
 
 #log-in {
     border-radius: 40px;;
-    padding: 5px 30px;
+    padding: 5px 20px;
     background-color: var(--secondColor);
     cursor: pointer;
     border: 1px solid var(--secondColor);
-
 }
 
 

@@ -1,6 +1,71 @@
 
+.mainView{
+    top: 90px;
+    position: relative;
+    width: 100%;
+} 
+
 
 .firstContainer{
+    position: relative;
     display: flex;
     justify-content:center;
+    padding: 50px;
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.9)), 
+    url(https://scontent.feoh8-1.fna.fbcdn.net/v/t39.30808-6/302161256_473795138093508_1623426826509209344_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeFOqePdXUfHz301PRFCwu3tNE-XJpiU8600T5cmmJTzrS1sDOO8Dbkz3o0_vc-Sqv0&_nc_ohc=a-pTvLedfwoAX_QgaSb&_nc_ht=scontent.feoh8-1.fna&oh=00_AfD4sgDuGjaRWpLyB_0Vg_10uMMpzH54p4-4RN7cKpxP8A&oe=65E485D6) no-repeat;
+    background-size: 100vw 100%;
+    object-fit: cover;
+}
+
+.information{
+    width: 55%;
+    margin: 40px 40px 40px 140px;
+    padding-top: 3%;
+}
+
+.title{
+    color: var(--white);
+    font-size: 60px;
+    width: 75%;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+.description {
+    color: var(--white);
+    margin: 35px 0;
+    font-size: 20px;
+}
+
+.buttom{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+
+.orderNow {
+    margin: 20px;
+    padding: 20px;
+    width: 183px;
+    color: var(--white);
+    background: var(--primaryColor);
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0 8px 0px var(--primaryColor);
+    cursor: pointer;
+}
+
+.imgMajor {
+    width: 45%;
+}
+
+.imgMajor img{
+    width: 600px;
+    height: 670px;
+    border-radius: 10px;
+    object-fit: cover;
 }

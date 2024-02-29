@@ -10,13 +10,19 @@
     position: relative;
     display: flex;
     justify-content:center;
-    padding: 50px;
+    flex-direction: column;
+    padding: 30px 30px 30px 50px;
     background: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.9)), 
     url(https://scontent.feoh8-1.fna.fbcdn.net/v/t39.30808-6/302161256_473795138093508_1623426826509209344_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeFOqePdXUfHz301PRFCwu3tNE-XJpiU8600T5cmmJTzrS1sDOO8Dbkz3o0_vc-Sqv0&_nc_ohc=a-pTvLedfwoAX_QgaSb&_nc_ht=scontent.feoh8-1.fna&oh=00_AfD4sgDuGjaRWpLyB_0Vg_10uMMpzH54p4-4RN7cKpxP8A&oe=65E485D6) no-repeat;
-    background-size: 100vw 100%;
-    object-fit: cover;
+    background-size: 100vw 100vh;
+    background-size: cover;
+}
+
+.initialView {
+    display: flex;
+    justify-content: center;
 }
 
 .information{
@@ -29,8 +35,8 @@
     color: var(--white);
     font-size: 60px;
     width: 75%;
-    letter-spacing: 2px;
-    word-spacing: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
 
 .description {
@@ -65,7 +71,49 @@
 
 .imgMajor img{
     width: 600px;
-    height: 670px;
+    height: 600px;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.iconsInformation {
+    z-index: 20;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    height: 110px;
+    background-color: var(--white);
+    border-radius: 10px;
+    position: relative;
+    top: 80px;
+    box-shadow: 0px 0 8px 0px var(--primaryColor);
+}
+
+.calification, .comments, .location {
+    background-color: var(--primaryColor);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bx {
+    color: var(--black);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.informationIcon {
+    align-items: center;
+    margin: auto;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

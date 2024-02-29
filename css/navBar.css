@@ -35,11 +35,11 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 90px;
 }
 
 .nav-bar ul li {
-    margin: 0px 30px;
+    margin: 0px 20px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -73,9 +73,9 @@ header {
 }
 
 #sign-up {
-    border-radius: 40px;
+    border-radius: 20px;
     border: 1px solid var(--secondColor);
-    padding: 5px 20px;
+    padding: 5px 15px;
     margin: 0;
     cursor: pointer;
 }
@@ -85,19 +85,19 @@ header {
     background-color: var(--secondColor);
 }
 
+
+#log-in {
+    border-radius: 20px;;
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: var(--secondColor);
+    border: 1px solid var(--secondColor);
+}
+
 #log-in:hover{
     transition: .8s;
     background-color: transparent;
 }
-
-#log-in {
-    border-radius: 40px;;
-    padding: 5px 20px;
-    background-color: var(--secondColor);
-    cursor: pointer;
-    border: 1px solid var(--secondColor);
-}
-
 
 /* Responsive de la nav-bar */
 @media (max-width: 1622px){
@@ -107,3 +107,21 @@ header {
     }
 }
 
+
+
+
+
+/* Bontón de whatsapp */
+.whatsapp i {
+    z-index: 100;
+    right: 25px;
+    bottom: 20px;
+    position: fixed;
+    width: 75px;
+    height: 70px;
+    padding: 10px 15px;
+    background: #00bb2d;
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+}

@@ -1,4 +1,125 @@
-
 .threeCointainer {
-    height: 100vh;
+    height: auto;
+    background-color: var(--black);
+    position: relative;
+}
+
+.titlePolemia {
+    color: var(--white);
+    position: relative;
+}
+
+.titlePolemia h1 {
+    display: flex;
+    justify-content: center;
+    padding: 90px 20px 20px 20px;
+}
+
+.informationCocteleria {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.informationCocteleria p{
+    width: 50%;
+    text-align: center;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cardsContainer {
+    margin: 40px;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--white);
+    height: 420px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.card h3 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card .imgCard {
+    display: flex;
+    justify-content: center;
+}
+
+.imgCard img {
+    height: 240px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.card button {
+    margin: 15px auto;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--primaryColor);
+    background-color: transparent;
+    transition: .5s;
+}
+
+.card button:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+}
+
+.containerMap {
+    position: relative;
+    width: 100%;
+}
+
+.titleMap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titleMap h1 {
+    margin: auto;
+    padding: 50px 0 10px;
+    color: var(--white);
+}
+
+.paragraphMap {
+    color: var(--white);
+    text-align: center;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphMap p{
+    width: 80%;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 10px 70px 10px;
 }

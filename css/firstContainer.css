@@ -1,6 +1,6 @@
 
 .mainView{
-    top: 90px;
+    top: 70px;
     position: relative;
     width: 100%;
 } 
@@ -15,7 +15,7 @@
     background: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.9)), 
-    url(https://scontent.feoh8-1.fna.fbcdn.net/v/t39.30808-6/302161256_473795138093508_1623426826509209344_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeFOqePdXUfHz301PRFCwu3tNE-XJpiU8600T5cmmJTzrS1sDOO8Dbkz3o0_vc-Sqv0&_nc_ohc=a-pTvLedfwoAX_QgaSb&_nc_ht=scontent.feoh8-1.fna&oh=00_AfD4sgDuGjaRWpLyB_0Vg_10uMMpzH54p4-4RN7cKpxP8A&oe=65E485D6) no-repeat;
+    url(/img/Portada.jpg) no-repeat;
     background-size: 100vw 100vh;
     background-size: cover;
 }
@@ -26,14 +26,14 @@
 }
 
 .information{
-    width: 55%;
+    width: 62%;
     margin: 40px 40px 40px 140px;
     padding-top: 3%;
 }
 
 .title{
     color: var(--white);
-    font-size: 60px;
+    font-size: clamp(2.375rem, 2.461vw + 0.797rem, 3.75rem);
     width: 75%;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -42,7 +42,7 @@
 .description {
     color: var(--white);
     margin: 35px 0;
-    font-size: 20px;
+    font-size: clamp(0.938rem, 0.559vw + 0.579rem, 1.25rem);
 }
 
 .buttom{
@@ -54,11 +54,11 @@
 .orderNow {
     margin: 20px;
     padding: 20px;
-    width: 183px;
+    width: clamp(10.813rem, 1.119vw + 10.095rem, 11.438rem);
     color: var(--white);
     background: var(--primaryColor);
     font-weight: bold;
-    font-size: 17px;
+    font-size: clamp(0.875rem, 0.336vw + 0.66rem, 1.063rem);
     border-radius: 10px;
     border: none;
     box-shadow: 0px 0 8px 0px var(--primaryColor);
@@ -70,8 +70,8 @@
 }
 
 .imgMajor img{
-    width: 600px;
-    height: 600px;
+    width: clamp(18.75rem, 22.371vw + 4.404rem, 31.25rem);
+    height: clamp(25rem, 22.371vw + 10.654rem, 37.5rem);
     border-radius: 10px;
     object-fit: cover;
 }
@@ -83,7 +83,7 @@
     align-items: center;
     margin: auto;
     width: 70%;
-    height: 110px;
+    height: clamp(5.625rem, 2.237vw + 4.19rem, 6.875rem);
     background-color: var(--white);
     border-radius: 10px;
     position: relative;
@@ -116,4 +116,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.informationIcon h3, .informationIcon p {
+    font-size: clamp(0.875rem, 0.447vw + 0.588rem, 1.125rem);
 }

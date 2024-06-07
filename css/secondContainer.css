@@ -10,7 +10,7 @@
 
 .informationCollage {
     width: 45%;
-    margin: 130px;
+    margin: 70px 130px;
     z-index: 20;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .collageImages img {
-    height: 300px;
-    width: 300px;
+    height: clamp(10rem, 13.423vw + 1.393rem, 17.5rem);
+    width: clamp(10rem, 13.423vw + 1.393rem, 17.5rem);
 }
 
 .collageImages {
@@ -90,6 +90,7 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    transition: .5s;
 }
 
 .viewMain button i {

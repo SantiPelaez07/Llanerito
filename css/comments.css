@@ -1,0 +1,24 @@
+.commentsAndCalifications {
+    width: 100%;
+    height: 100vh;
+}
+
+.commentsClients{
+    padding-top: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commentsClients h3 {
+    font-size: 45px;
+    width: 50%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.commentsClients p {
+    font-size: 20px;
+}

@@ -16,19 +16,19 @@
 
 .titleCollage {
     width: 95%;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .listCollage ul {
-    margin: 30px;
+    margin: 25px;
 }
 
 .listCollage ul li {
     list-style: none;
-    padding: 20px;
+    padding: 15px;
 }
 
 .listCollage ul li i {

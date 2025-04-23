@@ -14,6 +14,9 @@
         rgba(0,0,0,0.9)), 
     url(/img/Portada.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titleMain {
@@ -29,4 +32,13 @@
 
 .searchIcon {
     position: absolute;
+}
+
+.productsHead input {
+    width: 60%;
+    height: 8%;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    padding: 10px 15px ;
 }

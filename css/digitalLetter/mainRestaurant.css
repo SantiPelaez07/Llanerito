@@ -1,0 +1,36 @@
+.products {
+    display: flex;
+    gap: 2;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+} 
+
+#categoryRestaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: max-content;
+}
+
+.cardMainCategory {
+    padding: 20px;
+    display: flex;
+    width: 60%;
+    background-color: antiquewhite;
+}
+
+.cardMainCategory h4 {
+    margin: 0 10px;
+}
+
+.cardMainCategory button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+
+}
+
+
+

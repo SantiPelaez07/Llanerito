@@ -1,0 +1,67 @@
+.partSecond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    gap: 2;
+}
+
+.partSecond img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin: 0 7rem;
+}
+
+.partSecond p {
+    margin: 5rem;
+}
+
+
+/* Three part */
+.partThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    gap: 2;
+}
+
+.partThree img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin: 0 7rem;
+}
+
+.partThree p {
+    margin: 5rem;
+}
+
+
+
+/* Four part */
+.partFour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    gap: 2;
+}
+
+.partFour img {
+    width: 38rem;
+    height: 23rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin: 0 5rem;
+}
+
+.partFour p {
+    margin: 5rem;
+}

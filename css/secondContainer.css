@@ -84,22 +84,24 @@
     float: right;
 }
 
-.viewMain button {
+.viewMain a {
     padding: 14px;
     width: 200px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
     transition: .5s;
+    text-decoration: none;
+    color: var(--black);
 }
 
-.viewMain button i {
+.viewMain a i {
     margin-left: 10px;
     color: var(--black);
 }
 
 
-.viewMain button:hover{
+.viewMain a:hover{
     background-color: var(--primaryColor);
     color: var(--white);
 }

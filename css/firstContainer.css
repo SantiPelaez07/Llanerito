@@ -45,6 +45,10 @@
     font-size: clamp(0.938rem, 0.559vw + 0.579rem, 1.25rem);
 }
 
+.descriptionIcon i {
+    color: var(--white);
+}
+
 .buttom{
     display: flex;
     justify-content: center;
@@ -101,7 +105,7 @@
 
 
 .bx {
-    color: var(--black);
+    color: var(--white);
 }
 
 .icon {
@@ -121,3 +125,4 @@
 .informationIcon h3, .informationIcon p {
     font-size: clamp(0.875rem, 0.447vw + 0.588rem, 1.125rem);
 }
+

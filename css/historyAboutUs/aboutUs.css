@@ -1,0 +1,22 @@
+.partOne {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    gap: 2;
+}
+
+.partOne img {
+    width: 27rem;
+    height: 27rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin: 0 7rem;
+}
+
+.partOne p {
+    margin: 6rem;
+    font-size: clamp(0.813rem, 0.783vw + 0.31rem, 1.25rem);
+}

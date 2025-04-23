@@ -8,8 +8,6 @@
     <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
     <!-- Link del BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Link para enlazar JavaScript -->
-    <script defer src="../Llanerito/js/pages/digitalLetter.js"></script>
 
     <!-- Links de CSS -->
     <link rel="stylesheet" href="/css/navBar.css">
@@ -18,6 +16,9 @@
     <link rel="stylesheet" href="/css/threeCointainer.css">
     <link rel="stylesheet" href="/css/comments.css">
     <link rel="stylesheet" href="/css/footer.css">
+
+    <!-- Links de js (Integration of the API'S) -->
+     <script defer src="/js/components/cocktails/apiCocktails.js"></script>
 </head>
 
 <body>
@@ -29,10 +30,10 @@
                     <a href="#"><img src="../img/Logo.png" alt="Logo"></a>
                 </div>
                 <div class="options">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quienes Somos</a></li>
-                    <li><a href="#">Menú</a></li>
-                    <li><a href="#">Pide en línea</a></li>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/aboutUs.html">Quienes Somos</a></li>
+                    <li><a href="/pages/menu.html">Menú</a></li>
+                    <li><a href="https://wa.me/573054040013/?text=¡Hola! Me gustaría realizar un pedido ahora. Mucho gusto mi nombre es" target="_blank">Pide en línea</a></li>
                     <li><a href="#">Atención al cliente</a></li>
                 </div>
                 <!-- <div class="login">
@@ -44,7 +45,7 @@
     </header>
 
     <!-- botón de whatsapp -->
-    <a href="https://wa.me/573054040013/?text=¡Hola! %Me gustaría realizar un pedido ahora. %Mucho gusto mi nombre es 
+    <a href="https://wa.me/573054040013/?text=¡Hola! Me gustaría realizar un pedido ahora. Mucho gusto mi nombre es 
     " target="_blank">
         <div class="whatsapp">
             <i class='bx bxl-whatsapp bx-md'></i>
@@ -130,8 +131,8 @@
                 </div>
 
                 <div class="viewMain">
-                    <button class="digitalLetter">Mira nuestra carta<i
-                            class='bx bx-right-arrow-alt bx-border-circle'></i></button>
+                    <a href="/pages/menu.html" class="mainbutton">Mira nuestra carta<i
+                            class='bx bx-right-arrow-alt bx-border-circle'></i></a>
                 </div>
             </div>
         </div>
@@ -147,69 +148,7 @@
             </div>
             <div class="container">
                 <div class="cardsContainer">
-                    <div class="card">
-                        <h3>The Life is pink</h3>
-                        <div class="imgCard">
-                            <img src="/img/CoctelEjemplo.jpg" alt="">
-                        </div>
-                        <button>Conoce más aquí</button>
-                    </div>
 
-                    <div class="card">
-                        <h3>The Life is pink</h3>
-                        <div class="imgCard">
-                            <img src="/img/CoctelEjemplo.jpg" alt="">
-                        </div>
-                        <button>Conoce más aquí</button>
-                    </div>
-
-                    <div class="card">
-                        <h3>The Life is pink</h3>
-                        <div class="imgCard">
-                            <img src="/img/CoctelEjemplo.jpg" alt="">
-                        </div>
-                        <button>Conoce más aquí</button>
-                    </div>
-
-                    <div class="card">
-                        <h3>The Life is pink</h3>
-                        <div class="imgCard">
-                            <img src="/img/CoctelEjemplo.jpg" alt="">
-                        </div>
-                        <button>Conoce más aquí</button>
-                    </div>
-
-                    <div class="card">
-                        <h3>The Life is pink</h3>
-                        <div class="imgCard">
-                            <img src="/img/CoctelEjemplo.jpg" alt="">
-                        </div>
-                        <button>Conoce más aquí</button>
-                    </div>
-
-                    <div class="card">
-                        <h3>The Life is pink</h3>
-                        <div class="imgCard">
-                            <img src="/img/CoctelEjemplo.jpg" alt="">
-                        </div>
-                        <button>Conoce más aquí</button>
-                    </div>
-
-                    <div class="card">
-                        <h3>The Life is pink</h3>
-                        <div class="imgCard">
-                            <img src="/img/CoctelEjemplo.jpg" alt="">
-                        </div>
-                        <button>Conoce más aquí</button>
-                    </div>
-
-                    <div class="card">
-                        <h3>The Life is pink</h3>
-                        <div class="imgCard">
-                            <img src="/img/CoctelEjemplo.jpg" alt="">
-                        </div>
-                        <button>Conoce más aquí</button>
-                    </div>
                 </div>
             </div>
             <div class="containerMap">
@@ -236,7 +175,9 @@
                 <p>En este campo encontrarás algunas valoraciones de nuestros clientes </p>
             </div>
 
-            <div class="cardsClients"></div>
+            <div class="cardsClients">
+                
+            </div>
         </section>
         <section class="footer">
             <div class="informationRestaurant">

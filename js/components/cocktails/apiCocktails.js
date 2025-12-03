@@ -28,3 +28,5 @@ function printCategoryCocktails(data) {
         `;
     });
 }
+
+

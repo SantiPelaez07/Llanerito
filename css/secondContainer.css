@@ -1,3 +1,4 @@
+ 
  .secondContainer {
     height: 100vh;
     display: flex;
@@ -5,13 +6,17 @@
  }
 
 .collageImages {
-    width: 60%;
+    width: 55%;
 }
 
 .informationCollage {
     width: 45%;
-    margin: 70px 130px;
-    z-index: 20;
+    height: 100%;
+    margin: 0 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .titleCollage {
@@ -81,7 +86,9 @@
 }
 
 .viewMain {
-    float: right;
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
 }
 
 .viewMain a {
@@ -93,6 +100,8 @@
     transition: .5s;
     text-decoration: none;
     color: var(--black);
+    border: 1px solid var(--black);
+
 }
 
 .viewMain a i {

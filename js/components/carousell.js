@@ -35,6 +35,8 @@ async function Carousell() {
       `;
       carousel.appendChild(card);
     });
+
+
     // opcional: enfocar primer elemento
     carousel.children[0]?.setAttribute('tabindex', '0');
   }

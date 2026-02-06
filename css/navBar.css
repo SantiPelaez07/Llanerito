@@ -25,7 +25,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: var(--primaryColor);
     z-index: 100;
 }
@@ -84,6 +84,12 @@ header {
     height: 50px;
 }
 
+.toggle-icon {
+    display: none;
+
+    
+}
+
 /* #sign-up {
     border-radius: 20px;
     border: 1px solid var(--black);
@@ -126,7 +132,7 @@ header {
 
 
 
-/* Bontón de whatsapp */
+/* Botón de whatsapp */
 .whatsapp i {
     z-index: 100;
     right: 25px;
@@ -139,4 +145,81 @@ header {
     border-radius: 50%;
     color: var(--white);
     cursor: pointer;
+}
+
+@media  screen and (max-width: 600px) {
+
+    .nav-bar {
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .toggle-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 clamp(3.75rem, 3.356vw + 1.598rem, 5.625rem);
+    }
+
+    .nav-bar .logo img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .nav-bar ul{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .toggle-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle-icon i{
+        display: none;
+    }
+
+    .options {
+        top: 70px;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        height: calc(100vh - 70px);
+        margin: 0;
+        background-color: black;
+        right: -100%;
+        transition: right 0.5s ease-in-out;
+    }
+
+    /* Apertura de menu */
+    .options.active {
+        right: 0;
+    }
+
+    /* Activación de iconos */
+      .toggle-icon .bx-menu {
+    display: block;
+  }
+
+  .toggle-icon .bx-x {
+    display: none;
+  }
+
+  .toggle-icon.active .bx-x {
+    display: block;
+  }
+
+  .toggle-icon.active .bx-menu {
+    display: none;
+  }
+
 }

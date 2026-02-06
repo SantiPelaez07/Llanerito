@@ -117,3 +117,41 @@
 
 
 
+@media  screen and (max-width: 600px) {
+    .secondContainer {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .titleCollage {
+        width: 100%;
+    }
+
+    .informationCollage p {
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .collageImages {
+        width: 100%;
+    }
+
+    .informationCollage {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .viewMain {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .viewMain a {
+        width: 50%;
+        text-align: center;
+        margin: 0 0 30px;
+    }
+
+}

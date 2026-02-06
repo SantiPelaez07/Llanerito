@@ -20,7 +20,8 @@
 
     <!-- Links de js (Integration of the API'S) -->
     <script defer src="/js/components/cocktails/apiCocktails.js"></script>
-    <script  src="/js/components/carousell.js"></script>
+    <script src="/js/components/carousell.js"></script>
+    <script defer src="/js/components/navBar.js"></script>
 </head>
 
 <body>
@@ -28,9 +29,16 @@
     <header>
         <div class="nav-bar">
             <ul>
-                <div class="logo">
-                    <a href="#"><img src="../img/Logo.png" alt="Logo"></a>
+                <div class="toggle-mobile">
+                    <div class="logo">
+                        <a href="#"><img src="../img/Logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="toggle-icon">
+                        <i class="bx bx-menu"></i>
+                        <i class="bx bx-x"></i>
+                    </div>
                 </div>
+
                 <div class="options">
                     <li><a href="/index.html">Inicio</a></li>
                     <li><a href="/pages/aboutUs.html">Quienes Somos</a></li>
@@ -39,13 +47,16 @@
                             target="_blank">Pide en línea</a></li>
                     <li><a href="#">Atención al cliente</a></li>
                 </div>
+
+
                 <!-- <div class="login">
                     <li id="sign-up"><a href="#">Regístrate</a></li>
                     <li id="log-in"><a href="#">Inicia sesión</a></li>
                 </div> -->
             </ul>
         </div>
-    </header>
+
+    </header>D
 
     <!-- botón de whatsapp -->
     <a href="https://wa.me/573054040013/?text=¡Hola! Me gustaría realizar un pedido ahora. Mucho gusto mi nombre es 
@@ -110,7 +121,13 @@
         </div>
 
         <div class="secondContainer">
-            <div class="collageImages">
+            
+            <div class="informationCollage">
+                <h1 class="titleCollage">Gozamos de un amplio menú para complacer tu paladar...</h1>
+                <p>Tenemos recetas 100% originales, donde vas a poder disfrutar de experiencias verdaderamente únicas.
+                </p>
+
+                <div class="collageImages">
                 <div class="images-coll">
                     <img src="/img/collage1.jpg" alt="">
                     <img src="/img/collage2.jpg" alt="">
@@ -119,10 +136,6 @@
                 </div>
             </div>
 
-            <div class="informationCollage">
-                <h1 class="titleCollage">Gozamos de un amplio menú para complacer tu paladar...</h1>
-                <p>Tenemos recetas 100% originales, donde vas a poder disfrutar de experiencias verdaderamente únicas.
-                </p>
 
                 <div class="listCollage">
                     <ul>
@@ -177,7 +190,6 @@
             </div>
 
             <div class="cardsClients">
-                <!-- index.html -->
                 <div class="carousel-wrap">
                     <button class="btn prev" aria-label="Anterior">‹</button>
                     <div class="carousel" id="carousel"></div>

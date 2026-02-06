@@ -40,8 +40,8 @@ async function Carousell() {
   }
 
   prev.addEventListener('click', () => {
-    // scrollBy con behavior smooth; scrollLeft move por ancho del viewport del carousel
-    const amount = carousel.clientWidth * 0.98; // casi el ancho visible
+
+    const amount = carousel.clientWidth * 0.98;
     carousel.scrollBy({ left: -amount, behavior: 'smooth' });
   });
 

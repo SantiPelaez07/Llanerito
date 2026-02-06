@@ -9,7 +9,8 @@
 }
 
 .carousel-wrap {
-  max-width: 900px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -47,7 +48,7 @@
 }
 
 .cardCarousell {
-  flex: 0 0 50%;
+  flex: 0 0 33.333%;
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #ddd;
@@ -74,14 +75,23 @@
 
 /* responsive - en móvil mostramos 1 */
 @media (max-width:600px) {
-  .card {
-    flex: 0 0 100%
+    .cardCarousell {
+    flex: 0 0 90%;
+
+  }
+
+  .btn.prev {
+    left: 5px;
+  }
+
+  .btn.next {
+    right: 5px;
   }
 }
 
 /* opcional: esconder scroll bar (solo visual) */
 .carousel::-webkit-scrollbar {
-  height: 8px
+  display: none;
 }
 
 .carousel::-webkit-scrollbar-thumb {

@@ -76,8 +76,12 @@
 /* responsive - en móvil mostramos 1 */
 @media (max-width:600px) {
     .cardCarousell {
-    flex: 0 0 90%;
+    flex: 0 0 100%;
 
+  }
+
+  .carousel {
+    margin: 0 50px 0 50px;
   }
 
   .btn.prev {

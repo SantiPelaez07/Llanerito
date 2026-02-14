@@ -1,30 +1,36 @@
  
  .secondContainer {
-    height: 100vh;
+    height: max-content;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
  }
 
-.collageImages {
-    width: 55%;
-}
+
 
 .informationCollage {
-    width: 45%;
     height: 100%;
-    margin: 0 100px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
 }
 
+.informationCollage,
+.actionList {
+    flex: 1;
+}
+
 .titleCollage {
-    width: 95%;
+    margin-top: 60px;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    text-align: center;
+}
+
+.informationCollage p {
+    text-align: center;
+    margin: 0 0 20px 0;
 }
 
 .listCollage ul {
@@ -43,6 +49,13 @@
 .bx-check {
     background: #00bb2d;
     color: var(--white);
+}
+
+.collage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 40px 0;
 }
 
 .collageImages img {
@@ -83,6 +96,13 @@
 .images-coll img {
     border-radius: 10px;
     object-fit: cover;
+}
+
+.actionList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 .viewMain {
@@ -126,11 +146,17 @@
 
     .titleCollage {
         width: 100%;
+        margin-top: 0;
     }
 
     .informationCollage p {
         text-align: center;
         margin: 20px 0px;
+    }
+
+    .collage{
+        flex-direction: column;
+        align-items: center;
     }
 
     .collageImages {
@@ -149,9 +175,8 @@
     }
 
     .viewMain a {
-        width: 50%;
+        width: auto;
         text-align: center;
-        margin: 0 0 30px;
     }
 
 }

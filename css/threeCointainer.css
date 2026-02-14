@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     padding: 90px 20px 20px 20px;
+    font-size: clamp(1.25rem, 3.356vw - 0.902rem, 3.125rem);
 }
 
 .informationCocteleria {
@@ -25,6 +26,7 @@
 .informationCocteleria p{
     width: 50%;
     text-align: center;
+    font-size: clamp(1.00rem, calc(0.918rem + 0.408vw), 1.25rem);
 }
 
 
@@ -130,10 +132,12 @@
 
     .informationCocteleria p{
         width: 100%;
+        padding: 0 20px;
     }
 
     .cardsContainer {
         flex-direction: column;
+        align-items: center;
         width: 100%;
         margin: 20px 0;
     }

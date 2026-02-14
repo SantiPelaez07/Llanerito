@@ -181,6 +181,7 @@ header {
     .toggle-icon {
         display: block;
         cursor: pointer;
+        color: var(--white);
     }
 
     .toggle-icon i{
@@ -192,8 +193,8 @@ header {
         position: absolute;
         width: 100%;
         flex-direction: column;
-        justify-content: space-around;
-        height: calc(100vh - 70px);
+        justify-content: space-evenly;
+        height: 250px;
         margin: 0;
         background-color: black;
         right: -100%;
@@ -221,5 +222,7 @@ header {
   .toggle-icon.active .bx-menu {
     display: none;
   }
+
+
 
 }

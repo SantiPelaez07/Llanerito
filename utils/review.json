@@ -1,0 +1,177 @@
+[
+    {
+        "name": "Santiago",
+        "Municipio": "Envigado",
+        "date": "2024-05-10",
+        "description": "La comida estaba deliciosa y la atención fue muy rápida. El ambiente es perfecto para venir con la familia.",
+        "Calification": 4.3
+    },
+    {
+        "name": "Valentina",
+        "Municipio": "Medellín",
+        "date": "2024-05-12",
+        "description": "Me encantó todo, especialmente la carne. El servicio fue impecable.",
+        "Calification": 4.8
+    },
+    {
+        "name": "Juan Pablo",
+        "Municipio": "Sabaneta",
+        "date": "2024-05-14",
+        "description": "Muy buena experiencia, aunque el plato tardó un poco más de lo esperado.",
+        "Calification": 4.5
+    },
+    {
+        "name": "Camila",
+        "Municipio": "La Estrella",
+        "date": "2024-05-16",
+        "description": "Excelente lugar, quedé antojada de volver. Los cortes estaban en su punto.",
+        "Calification": 4.7
+    },
+    {
+        "name": "Andrés",
+        "Municipio": "Itagüí",
+        "date": "2024-05-18",
+        "description": "La comida estuvo buena, aunque la atención podría mejorar un poco.",
+        "Calification": 4.1
+    },
+    {
+        "name": "Daniela",
+        "Municipio": "Bello",
+        "date": "2024-05-20",
+        "description": "Todo espectacular. La mejor experiencia que he tenido últimamente en un restaurante.",
+        "Calification": 4.9
+    },
+    {
+        "name": "Mateo",
+        "Municipio": "Medellín",
+        "date": "2024-05-22",
+        "description": "El sabor estuvo bien, pero esperaba porciones un poco más grandes.",
+        "Calification": 4.0
+    },
+    {
+        "name": "Laura",
+        "Municipio": "Envigado",
+        "date": "2024-05-23",
+        "description": "Muy buen servicio y un ambiente acogedor. Me gustó el detalle del pan de cortesía.",
+        "Calification": 4.6
+    },
+    {
+        "name": "Miguel",
+        "Municipio": "Copacabana",
+        "date": "2024-05-25",
+        "description": "El sabor estuvo bien pero la carne llegó un poco más cocida de lo que pedí.",
+        "Calification": 3.9
+    },
+    {
+        "name": "Juliana",
+        "Municipio": "Barbosa",
+        "date": "2024-05-27",
+        "description": "Buen lugar para compartir, aunque considero que pueden mejorar las bebidas.",
+        "Calification": 4.4
+    },
+    {
+        "name": "Sebastián",
+        "Municipio": "Sabaneta",
+        "date": "2024-05-29",
+        "description": "Excelente atención y la carne estaba perfecta. Muy recomendado.",
+        "Calification": 4.7
+    },
+    {
+        "name": "Valeria",
+        "Municipio": "Bello",
+        "date": "2024-05-30",
+        "description": "Lugar bonito y agradable. La comida estuvo rica pero nada extraordinario.",
+        "Calification": 4.2
+    },
+    {
+        "name": "Tomás",
+        "Municipio": "Medellín",
+        "date": "2024-06-01",
+        "description": "Impresionante sabor y presentación. Definitivamente volveré.",
+        "Calification": 4.8
+    },
+    {
+        "name": "Lucía",
+        "Municipio": "Itagüí",
+        "date": "2024-06-03",
+        "description": "La comida estuvo rica, pero se demoraron en traer el pedido.",
+        "Calification": 4.1
+    },
+    {
+        "name": "Felipe",
+        "Municipio": "Girardota",
+        "date": "2024-06-05",
+        "description": "Muy buenos cortes y buen servicio. La relación calidad-precio es excelente.",
+        "Calification": 4.5
+    },
+    {
+        "name": "Ana María",
+        "Municipio": "La Estrella",
+        "date": "2024-06-07",
+        "description": "Todo bien, aunque esperaba un poco más de variedad en el menú.",
+        "Calification": 4.0
+    },
+    {
+        "name": "Samuel",
+        "Municipio": "Envigado",
+        "date": "2024-06-09",
+        "description": "La mejor experiencia gastronómica que he tenido este año. Todo estuvo perfecto.",
+        "Calification": 4.9
+    },
+    {
+        "name": "Isabella",
+        "Municipio": "Medellín",
+        "date": "2024-06-10",
+        "description": "Muy buena comida y precios razonables. Sin duda volveré.",
+        "Calification": 4.3
+    },
+    {
+        "name": "Nicolás",
+        "Municipio": "Itagüí",
+        "date": "2024-06-12",
+        "description": "La comida estuvo deliciosa, aunque el lugar estaba un poco lleno.",
+        "Calification": 4.4
+    },
+    {
+        "name": "Mariana",
+        "Municipio": "Sabaneta",
+        "date": "2024-06-14",
+        "description": "Todo perfecto. Me encantó el sabor, la atención y el ambiente.",
+        "Calification": 4.8
+    },
+    {
+        "name": "Esteban",
+        "Municipio": "Bello",
+        "date": "2024-06-15",
+        "description": "La comida estuvo bien, pero no se destacó demasiado.",
+        "Calification": 4.2
+    },
+    {
+        "name": "Sara",
+        "Municipio": "Medellín",
+        "date": "2024-06-17",
+        "description": "Excelente sabor y buena atención. El lugar es muy acogedor.",
+        "Calification": 4.7
+    },
+    {
+        "name": "Emmanuel",
+        "Municipio": "Copacabana",
+        "date": "2024-06-19",
+        "description": "La comida estaba bien pero el servicio fue un poco lento.",
+        "Calification": 3.8
+    },
+    {
+        "name": "Gabriela",
+        "Municipio": "Girardota",
+        "date": "2024-06-20",
+        "description": "Muy buena experiencia. Los jugos y entradas estuvieron increíbles.",
+        "Calification": 4.6
+    },
+    {
+        "name": "David",
+        "Municipio": "Envigado",
+        "date": "2024-06-22",
+        "description": "Excelente restaurante, superó por completo mis expectativas.",
+        "Calification": 4.9
+    }
+]

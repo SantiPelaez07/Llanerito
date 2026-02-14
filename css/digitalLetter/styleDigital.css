@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.productsHead {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.9)), 
+    url(/img/Portada.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleMain {
+    padding: 6rem 0 3rem;
+    color: var(--white);
+}
+
+.titleMain, 
+.productSearch {
+    display: flex;
+    justify-content: center;
+}
+
+.searchIcon {
+    position: absolute;
+}
+
+.productsHead input {
+    width: 60%;
+    height: 8%;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    padding: 10px 15px ;
+}

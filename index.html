@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Llanerito - La Estrella</title>
+    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
+    <!-- Link del BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Links de CSS -->
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/firstContainer.css">
+    <link rel="stylesheet" href="/css/secondContainer.css">
+    <link rel="stylesheet" href="/css/threeCointainer.css">
+    <link rel="stylesheet" href="/css/comments.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/carouselClients.css">
+
+    <!-- Links de js (Integration of the API'S) -->
+    <script defer src="/js/components/cocktails/apiCocktails.js"></script>
+    <script src="/js/components/carousell.js"></script>
+    <script defer src="/js/components/navBar.js"></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="nav-bar">
+            <ul>
+                <div class="toggle-mobile">
+                    <div class="logo">
+                        <a href="/index.html"><img src="../img/Logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="toggle-icon">
+                        <i class="bx bx-menu"></i>
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <div class="options">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/aboutUs.html">Quienes Somos</a></li>
+                    <li><a href="/pages/menu.html">Menú</a></li>
+                    <li><a href="https://wa.me/573054040013/?text=¡Hola! Me gustaría realizar un pedido ahora. Mucho gusto mi nombre es"
+                            target="_blank">Pide en línea</a></li>
+                    <li><a href="#">Atención al cliente</a></li>
+                </div>
+
+
+                <!-- <div class="login">
+                    <li id="sign-up"><a href="#">Regístrate</a></li>
+                    <li id="log-in"><a href="#">Inicia sesión</a></li>
+                </div> -->
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- botón de whatsapp -->
+    <a href="https://wa.me/573054040013/?text=¡Hola! Me gustaría realizar un pedido ahora. Mucho gusto mi nombre es 
+    " target="_blank">
+        <div class="whatsapp">
+            <i class='bx bxl-whatsapp bx-md'></i>
+        </div>
+    </a>
+    <!-- Secciones de landing page -->
+    <main class="mainView">
+        <div class="firstContainer">
+            <div class="initialView">
+                <div class="information">
+                    <h1 class="title">Deja que tu paladar viaje a nuestra cultura llanera</h1>
+                    <p class="description">Nos encontramos en La Estrella, Antioquia, justo por la vía vieja a caldas.
+                    </p>
+                    <div class="buttom">
+                        <button class="orderNow">¡Pide ahora!</button>
+                    </div>
+                </div>
+                <div class="imgMajor">
+                    <img src="/img/PortadaIlustrativa.jpg" alt="Imágen de portada">
+                </div>
+            </div>
+            <div class="iconsInformation">
+                <div class="icon">
+                    <div class="calification">
+                        <div class="descriptionIcon">
+                            <i class='bx bx-star bx-sm'></i>
+                        </div>
+                    </div>
+                    <div class="informationIcon">
+                        <h3>90+</h3>
+                        <p>Calification</p>
+
+                    </div>
+                </div>
+                <div class="icon">
+                    <div class="comments">
+                        <div class="descriptionIcon">
+                            <i class='bx bx-comment bx-sm'></i>
+                        </div>
+                    </div>
+                    <div class="informationIcon">
+                        <h3>30+</h3>
+                        <p>Comentarios Destacados</p>
+
+                    </div>
+                </div>
+                <div class="icon">
+                    <div class="location">
+                        <div class="descriptionIcon">
+                            <i class='bx bx-map bx-sm'></i>
+                        </div>
+                    </div>
+                    <div class="informationIcon">
+                        <h3>50+</h3>
+                        <p>La Estrella, Antioquia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="secondContainer">
+
+            <div class="informationCollage">
+                <h1 class="titleCollage">Gozamos de un amplio menú para complacer tu paladar...</h1>
+                <p>Tenemos recetas 100% originales, donde vas a poder disfrutar de experiencias verdaderamente únicas.
+                </p>
+                <div class="collage">
+                    <div class="collageImages">
+                        <div class="images-coll">
+                            <img src="/img/collage1.jpg" alt="">
+                            <img src="/img/collage2.jpg" alt="">
+                            <img src="/img/collage3.jpg" alt="">
+                            <img src="/img/collage4.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="actionList">
+                        <div class="listCollage">
+                            <ul>
+                                <li><i class='bx bx-check bx-border-circle'></i>Bebidas refrescantes y especiales...
+                                </li>
+                                <li><i class='bx bx-check bx-border-circle'></i>Sabores realmente auténticos.</li>
+                                <li><i class='bx bx-check bx-border-circle'></i>Ambientación única y novedosa.</li>
+                                <li><i class='bx bx-check bx-border-circle'></i>Personal amable, alegre y atento.</li>
+                            </ul>
+                        </div>
+                        <div class="viewMain">
+                            <a href="/pages/menu.html" class="mainbutton">Mira nuestra carta<i
+                                    class='bx bx-right-arrow-alt bx-border-circle'></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="threeCointainer">
+            <div class="titlePolemia">
+                <h1>LA POLEMIA</h1>
+                <div class="informationCocteleria">
+                    <p>Coctelería completamente especial para que puedas disfrutar de un sabor refrescante y
+                        verdaderamente
+                        auténtico, que solo la polemia bar te puede brindar.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cardsContainer"> </div>
+            </div>
+            <div class="containerMap">
+                <div class="titleMap">
+                    <h1>Encuentranos en el segundo piso del Lanerito de La Estrella</h1>
+                    <div class="paragraphMap">
+                        <p>Disfruta de un espacio diferente e iluminado en el segundo piso de nuestro restaurante, donde
+                            podras disfrutar de la exploción de muchos sabores que solo La Polemia Bar te ofrecerá...
+                        </p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.938614408412!2d-75.63459631148625!3d6.138949306978275!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4681f133af9c15%3A0xfcda56de5f6b8eb9!2sEl%20Llanerito%20La%20Estrella!5e0!3m2!1ses!2sco!4v1717733560151!5m2!1ses!2sco"
+                        width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <section class="commentsAndCalifications">
+            <div class="commentsClients">
+                <h3>Algunas reseñas de nuestro servicio Llanerito la Estrella</h3>
+                <p>En este campo encontrarás algunas valoraciones de nuestros clientes </p>
+            </div>
+
+            <div class="cardsClients">
+                <div class="carousel-wrap">
+                    <button class="btn prev" aria-label="Anterior">‹</button>
+                    <div class="carousel" id="carousel"></div>
+                    <button class="btn next" aria-label="Siguiente">›</button>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="footer">
+            <div class="informationRestaurant">
+                <div class="name">
+                    <img src="/img/Logo.png" alt="Logo-Llanerito">
+                    <h3>Llanerito La Estrella</h3>
+                </div>
+                <p>Saborea la auténtica carne llanera, asada a la perfección en un ambiente acogedor.</p>
+                <div class="optionsFooter">
+                    <a href="">Trabaja con Nosotros</a>
+                    <a href="">Soy proveedor</a>
+                </div>
+                <div class="linearFooter"></div>
+                <div class="socialMedia">
+                    <a href="https://www.instagram.com/elllaneritolaestrella/"><i class='bx bxl-instagram'></i></a>
+                    <a href="cebook.com/elllaneritolaestrella"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://maps.app.goo.gl/WwmTcygcm8bqj2wE8"><i class='bx bx-map-pin'></i></a>
+                </div>
+                <div class="informationRights">
+                    <p>Copyright © 2026 Llanerito la Estrella. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

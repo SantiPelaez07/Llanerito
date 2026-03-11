@@ -7,6 +7,13 @@
     position: relative;
 }
 
+
+.products {
+    display: flex;
+    height: 100vh;
+}
+
+
 .cardMain {
     position: relative;
     display: flex;
@@ -14,29 +21,142 @@
     align-items: center;
     background: #F9E8F5;
     margin: 30px;
-    padding: 20px;
     border-radius: 10px;
+    width: 350px;
+    height: 330px;
 }
 
 .cardMain img {
-    width: 170px;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     padding-bottom: 20px;
+    border-radius: 15px;
 }
 
-#pagination {
-    margin-top: 20px;
-    text-align: center;
+.cardMain img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
+
+.infoCard {
+    margin: 0 20px;
+}
+
+.cardMain .essencialInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.essencialInfo h4,
+.essencialInfo p,
+.cardMain p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+#productsRestaurant {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.mainProducts {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.mainProducts::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mainProducts::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.mainProducts::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Paginación */
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#paginationNumbers {
+    margin: 0 10px
+}
+
+#prevPage,
+#nextPage {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
 
 .paginationButton {
     margin: 0 5px;
     padding: 10px 15px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
 }
 
 .paginationButton:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .products {
+        height: auto;
+    }
+
+    .mainProducts {
+        overflow: visible;
+        padding: 10px;
+    }
+
+
+    #productsRestaurant {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 10px;
+    }
+
+    .cardMain {
+        width: 100%;
+        margin: 0;
+        border-radius: 12px;
+    }
+
+    .cardMain img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .infoCard {
+        margin: 0 15px 15px 15px;
+    }
+
+    
 }

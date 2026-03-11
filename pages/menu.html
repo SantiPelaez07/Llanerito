@@ -17,9 +17,12 @@
     <link rel="stylesheet" href="../css/digitalLetter/productsRestaurant.css">
 
     <!-- Link para enlazar JavaScript -->
+    <script defer src="../js/components/paginationProducts.js"></script>
     <script defer src="../js/components/apiRestCategory.js"></script>
+    <script defer src="../js/components/inputSearch.js"></script>
     <script defer src="../js/components/apiRestProduct.js"></script>
     <script defer src="../js/components/navBar.js"></script>
+
 
 </head>
 
@@ -47,6 +50,9 @@
                     <li><a href="#">Atención al cliente</a></li>
                 </div>
 
+                <!-- <div class="cart">
+                    <i class="bx bx-cart-alt" />
+                </div> -->
 
                 <!-- <div class="login">
                     <li id="sign-up"><a href="#">Regístrate</a></li>
@@ -65,14 +71,32 @@
         <input type="search" class="productSearch">
     </div>
     <section class="products">
-        <div id="categoryRestaurant"></div>
-        <div id="productsRestaurant"></div>
-        <div id="pagination"></div>
+        <div class="navMobileFilter">
+            <button class="buttonFilter">Filtrar</button>
+        </div>
+        <div class="categoryHeading">
+            <div class="heading">
+                <h2>Categorías</h2>
+                <div class="actionsMain">
+                    <button class="allProducts">Ver todo</button>
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <aside id="categoryRestaurant"></aside>
+            <div class="mobileButton">
+                <button class="allProducts">Ver todo</button>
+            </div>
+        </div>
+        <main class="mainProducts">
+            <div id="productsRestaurant"></div>
+        </main>
     </section>
-    <section class="categories">
-    </section>
-
+    <div id="pagination">
+        <button id="prevPage">Anterior</button>
+        <div id="paginationNumbers"></div>
+        <button id="nextPage">Siguiente</button>
     </div>
+
 
 
     <!-- Footer -->

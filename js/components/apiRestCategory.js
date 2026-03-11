@@ -1,8 +1,12 @@
 const containerFatherCategory = document.querySelector('#categoryRestaurant');
 
+// Para controlar visualmente la categoría seleccionada
+
 
 document.addEventListener('DOMContentLoaded', () => {
-    apiMainCategory();
+    apiMainCategory()
+    
+
   })
 
 
@@ -39,8 +43,17 @@ function printCategoryByName(data){
         containerFatherProduct.innerHTML += `
         <div class="cardMain">
             <img src='${element.urlImage}'>
-            <h4>${element.name}</h4>
-            <p>$ ${element.price}</p>
+            <div class="infoCard">
+            <div class="essencialInfo">
+                <h4>${element.name}</h4>
+                <p>$ ${element.price}</p>
+            </div>
+            <p>${element.description}</p>
+            <div class="categoryInfo">
+                <p>${element.category.name}</p>
+                <button class="addToCart" data-id="${element.id}">Agregar</button>
+            </div>
+            </div>
         </div>
         `;
     });
@@ -58,17 +71,30 @@ function printMainCategory(data){
 
         const categoryCard = document.createElement('div');
         categoryCard.classList.add('cardMainCategory');
-        const categoryButton = document.createElement('button')
-        categoryButton.innerHTML += `
-            <h4>${element.id}</h4>
+        const cardMainCategory = document.createElement('cardMainCategory');
+        cardMainCategory.innerHTML += `
+        <div class="categoryCards">
+            <input type="radio" name="category" value="${element.name}">
             <h4>${element.name}</h4>
             <p>${element.numberProducts}</p>
+        </div>
         `;
-        categoryButton.addEventListener('click', () => categorySelect(element.name));
-        categoryCard.appendChild(categoryButton);
+        cardMainCategory.addEventListener('change', () => categorySelect(element.name));
+        categoryCard.appendChild(cardMainCategory);
         containerFatherCategory.appendChild(categoryCard);
 
     });
+
+    const allProducts = document.querySelectorAll('.allProducts');
+    allProducts.forEach(button =>{
+        button.addEventListener('click', () => {
+            apiMainProduct(1);
+        const checkedInput = containerFatherCategory.querySelector('input[type="radio"]:checked');
+        if (checkedInput) checkedInput.checked = false;
+        })
+    })
+ 
+
     } catch(error){
         console.log("Error en el print", error)
     }

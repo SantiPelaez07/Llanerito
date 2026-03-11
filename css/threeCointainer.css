@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     padding: 90px 20px 20px 20px;
-    font-size: clamp(1.25rem, 3.356vw - 0.902rem, 3.125rem);
+    font-size: clamp(1.25rem, 1.119vw + 0.533rem, 1.875rem);
 }
 
 .informationCocteleria {

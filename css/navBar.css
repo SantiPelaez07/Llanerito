@@ -51,7 +51,7 @@ header {
     align-items: center;
     padding: 7px;
     color: var(--white);
-    font-size: clamp(0.625rem, 0.671vw + 0.195rem, 1rem);
+    font-size: clamp(0.5rem, 0.559vw + 0.141rem, 0.813rem);
     position: relative;
 }
 

@@ -1,7 +1,8 @@
 const containerFatherProduct = document.querySelector('#productsRestaurant');
+let dataList = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-    apiMainProduct(1);
+    initProducts();
 })
 
 
@@ -13,6 +14,7 @@ async function apiMainProduct(page) {
         const data = await response.json();
          console.log("Respuesta completa:", data);
         printMainProduct(data.content);
+        dataList = data.content
         let totalPage = data.totalPages;
         console.log("Total pages:", data.totalPages);
         renderPagination(totalPage, data.number + 1, apiMainProduct);
@@ -50,4 +52,30 @@ function printMainProduct(data) {
     } catch (error) {
         console.log("Error en el print", error)
     }
+}
+
+
+
+
+// Agregar elementos al carrito
+function initProducts() {
+    const container = document.querySelector('#productsRestaurant');
+    if (!container) return;
+    apiMainProduct(1);
+    container.addEventListener("click", (event) => {
+        if (event.target.classList.contains("addToCart")) {
+            const id = Number(event.target.dataset.id);
+            findProduct(id);
+        }
+    });
+}
+
+
+function findProduct(id){
+    const product = dataList.find(p => p.id === id);
+    if(!product){
+        console.error("Producto no encontrado");
+        return;
+    }
+    addProductToCart(product);
 }

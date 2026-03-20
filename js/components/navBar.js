@@ -5,10 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
 })
 
-toggle.addEventListener("click", () => {
-    toggle.classList.toggle("active");
-    menu.classList.toggle("active");
-});
+
 
 
 // Apertura para aplicar el filtro en mobile
@@ -37,7 +34,9 @@ if (categoryHeading) {
 }
 
 document.addEventListener('click', () => {
-    categoryHeading.classList.remove("active");
+    if(categoryHeading){
+        categoryHeading.classList.remove("active");
+    }
 });
 
 if (categoryHeading) {
@@ -53,11 +52,7 @@ allView.forEach(button => {
 });
 
 function initNavbar() {
-    const toggle = document.querySelector(".toggle-icon");
-    const menu = document.querySelector(".options");
-
     if (!toggle || !menu) return;
-
     toggle.addEventListener("click", () => {
         menu.classList.toggle("active");
         toggle.classList.toggle("active");

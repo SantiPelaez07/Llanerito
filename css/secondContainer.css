@@ -1,182 +1,194 @@
- 
  .secondContainer {
-    height: max-content;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+     height: max-content;
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
  }
 
 
 
-.informationCollage {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
+ .informationCollage {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
 
-.informationCollage,
-.actionList {
-    flex: 1;
-}
+ }
 
-.titleCollage {
-    margin-top: 60px;
-    padding: 20px;
-    text-align: center;
-}
+ .informationCollage,
+ .actionList {
+     flex: 1;
+ }
 
-.informationCollage p {
-    text-align: center;
-    margin: 0 0 20px 0;
-}
+ .titleCollage {
+     margin-top: 60px;
+     padding: 20px;
+     text-align: center;
+ }
 
-.listCollage ul {
-    margin: 25px;
-}
-
-.listCollage ul li {
-    list-style: none;
-    padding: 15px;
-}
-
-.listCollage ul li i {
-    margin-right: 15px;
-}
-
-.bx-check {
-    background: #00bb2d;
-    color: var(--white);
-}
-
-.collage {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0 40px 0;
-}
-
-.collageImages img {
-    height: clamp(10rem, 13.423vw + 1.393rem, 17.5rem);
-    width: clamp(10rem, 13.423vw + 1.393rem, 17.5rem);
-}
-
-.collageImages {
-    position: relative;
-    width: 55%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.images-coll {
-    display: grid;
-    gap: 9px;
-    grid-template-areas: 
-    "a b"
-    "c d"
-    ;
-}
-
-.images-coll:nth-child(1){
-    grid-area: a;
-}
-.images-coll:nth-child(2){
-    grid-area: b;
-}
-.images-coll:nth-child(3){
-    grid-area: c;
-}
-.images-coll:nth-child(4){
-    grid-area: d;
-}
-
-.images-coll img {
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.actionList {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-}
-
-.viewMain {
-    display: flex;
-    justify-content: end;
-    margin-right: 100px;
-}
-
-.viewMain a {
-    padding: 14px;
-    width: 200px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    transition: .5s;
-    text-decoration: none;
-    color: var(--black);
-    border: 1px solid var(--black);
-
-}
-
-.viewMain a i {
-    margin-left: 10px;
-    color: var(--black);
-}
+ .informationCollage p {
+     margin: 0 0 20px 0;
+ }
 
 
-.viewMain a:hover{
-    background-color: var(--primaryColor);
-    color: var(--white);
-}
+ .listCollage ul {
+     margin: 25px;
+ }
+
+ .listCollage ul li {
+     list-style: none;
+     padding: 15px;
+     text-align: left;
+     display: flex;
+     justify-content: start;
+     align-items: center;
+ }
+
+ .listCollage ul li i {
+     margin-right: 15px;
+ }
+
+ .bx-check {
+     background: #00bb2d;
+     color: var(--white);
+     height: 30px;
+     width: 33px;
+     text-align: center;
+     align-items: center;
+ }
+
+ .collage {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     margin: 20px 0 40px 0;
+ }
+
+ .collageImages img {
+     height: clamp(10rem, 13.423vw + 1.393rem, 17.5rem);
+     width: clamp(10rem, 13.423vw + 1.393rem, 17.5rem);
+ }
+
+ .collageImages {
+     position: relative;
+     width: 55%;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+ }
+
+ .images-coll {
+     display: grid;
+     gap: 9px;
+     grid-template-areas:
+         "a b"
+         "c d"
+     ;
+ }
+
+ .images-coll:nth-child(1) {
+     grid-area: a;
+ }
+
+ .images-coll:nth-child(2) {
+     grid-area: b;
+ }
+
+ .images-coll:nth-child(3) {
+     grid-area: c;
+ }
+
+ .images-coll:nth-child(4) {
+     grid-area: d;
+ }
+
+ .images-coll img {
+     border-radius: 10px;
+     object-fit: cover;
+ }
+
+ .actionList {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+
+ }
+
+ .viewMain {
+     display: flex;
+     justify-content: end;
+     margin-right: 100px;
+ }
+
+ .viewMain a {
+     padding: 14px;
+     width: 200px;
+     border-radius: 10px;
+     border: none;
+     cursor: pointer;
+     transition: .5s;
+     text-decoration: none;
+     color: var(--black);
+     border: 1px solid var(--black);
+
+ }
+
+ .viewMain a i {
+     margin-left: 10px;
+     color: var(--black);
+ }
+
+
+ .viewMain a:hover {
+     background-color: var(--primaryColor);
+     color: var(--white);
+ }
 
 
 
-@media  screen and (max-width: 600px) {
-    .secondContainer {
-        flex-direction: column;
-        gap: 20px;
-        height: auto;
-    }
+ @media screen and (max-width: 600px) {
+     .secondContainer {
+         flex-direction: column;
+         gap: 20px;
+         height: auto;
+     }
 
-    .titleCollage {
-        width: 100%;
-        margin-top: 0;
-    }
+     .titleCollage {
+         width: 100%;
+         margin-top: 0;
+     }
 
-    .informationCollage p {
-        text-align: center;
-        margin: 20px 0px;
-    }
+     .informationCollage p {
+         text-align: center;
+         margin: 20px 0px;
+     }
 
-    .collage{
-        flex-direction: column;
-        align-items: center;
-    }
+     .collage {
+         flex-direction: column;
+         align-items: center;
+     }
 
-    .collageImages {
-        width: 100%;
-    }
+     .collageImages {
+         width: 100%;
+     }
 
-    .informationCollage {
-        width: 100%;
-        margin: 0;
-        padding: 0 20px;
-    }
+     .informationCollage {
+         width: 90%;
+         margin: 0;
+         padding: 0 20px;
+     }
 
-    .viewMain {
-        justify-content: center;
-        margin-right: 0;
-    }
+     
 
-    .viewMain a {
-        width: auto;
-        text-align: center;
-    }
+     .viewMain {
+         justify-content: center;
+         margin-right: 0;
+     }
 
-}
+     .viewMain a {
+         width: auto;
+         text-align: center;
+     }
+
+ }

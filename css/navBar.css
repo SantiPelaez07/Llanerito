@@ -84,9 +84,11 @@ header {
     height: 50px;
 }
 
-.toggle-icon {
+.toggle-icon,
+.logoMobile {
     display: none;
 }
+
 
 .cart {
     cursor: pointer;
@@ -176,6 +178,15 @@ header {
         display: none;
     }
 
+    .logoMobile {
+        display: flex;
+    }
+
+    .logoMobile img {
+        width: 65px;
+        height: 50px;
+    }
+
     .toggle-mobile {
         width: 100%;
         display: flex;
@@ -183,6 +194,7 @@ header {
         align-items: center;
         padding: 0 clamp(3.75rem, 3.356vw + 1.598rem, 5.625rem);
     }
+
 
     .nav-bar .logo img {
         width: 50px;

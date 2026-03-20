@@ -86,9 +86,22 @@ header {
 
 .toggle-icon {
     display: none;
-
-    
 }
+
+.cart {
+    cursor: pointer;
+}
+
+.cart i {
+    color: white;
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+.cart:hover i {
+    transform: scale(1.1);
+}
+
 
 /* #sign-up {
     border-radius: 20px;
@@ -147,7 +160,9 @@ header {
     cursor: pointer;
 }
 
+
 @media  screen and (max-width: 600px) {
+
 
     .nav-bar {
         height: 70px;
@@ -155,6 +170,10 @@ header {
         flex-direction: column;
         justify-content: center;
         margin: 0;
+    }
+
+    .logo {
+        display: none;
     }
 
     .toggle-mobile {
@@ -197,13 +216,14 @@ header {
         height: 250px;
         margin: 0;
         background-color: black;
-        right: -100%;
-        transition: right 0.5s ease-in-out;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
     }
+
 
     /* Apertura de menu */
     .options.active {
-        right: 0;
+        transform: translateX(0);
     }
 
     /* Activación de iconos */

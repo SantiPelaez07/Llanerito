@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="../css/digitalLetter/styleDigital.css">
     <link rel="stylesheet" href="../css/digitalLetter/mainRestaurant.css">
     <link rel="stylesheet" href="../css/digitalLetter/productsRestaurant.css">
+    <link rel="stylesheet" href="../css/component/shoppingCart.css">
 
     <!-- Link para enlazar JavaScript -->
     <script defer src="../js/components/paginationProducts.js"></script>
     <script defer src="../js/components/apiRestCategory.js"></script>
     <script defer src="../js/components/inputSearch.js"></script>
+    <script defer src="../js/components/shoppingCart.js"></script>
     <script defer src="../js/components/apiRestProduct.js"></script>
     <script defer src="../js/components/navBar.js"></script>
 
@@ -31,15 +33,10 @@
     <header>
         <div class="nav-bar">
             <ul>
-                <div class="toggle-mobile">
-                    <div class="logo">
-                        <a href="/index.html"><img src="../img/Logo.png" alt="Logo"></a>
-                    </div>
-                    <div class="toggle-icon">
-                        <i class="bx bx-menu"></i>
-                        <i class="bx bx-x"></i>
-                    </div>
+                <div class="logo">
+                    <a href="/index.html"><img src="../img/Logo.png" alt="Logo"></a>
                 </div>
+
 
                 <div class="options">
                     <li><a href="/index.html">Inicio</a></li>
@@ -50,9 +47,16 @@
                     <li><a href="#">Atención al cliente</a></li>
                 </div>
 
-                <!-- <div class="cart">
-                    <i class="bx bx-cart-alt" />
-                </div> -->
+                <div class="toggle-mobile">
+                    <div class="cart">
+                        <i class="bx bx-cart-alt"></i>
+                        <!-- <p class="numberProducts">0</p> -->
+                    </div>
+                    <div class="toggle-icon">
+                        <i class="bx bx-menu"></i>
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
 
                 <!-- <div class="login">
                     <li id="sign-up"><a href="#">Regístrate</a></li>
@@ -62,6 +66,24 @@
         </div>
 
     </header>
+
+
+    <!-- Panel del carrito de compras  -->
+    <div class="shoppingCart">
+        <div class="titleCart">
+            <h2>Carrito de compras</h2>
+            <i class="bx bx-x"></i>
+        </div>
+        <main class="cartList">
+            <div class="informationCart"></div>
+        </main>
+        <div class="payInformation">
+            <div class="totalOrder">
+                Total a pagar:
+            </div>
+            <button class="placeOrder">Envíar pedido</button>
+        </div>
+    </div>
 
 
     <!-- Buscador de la carta digital -->

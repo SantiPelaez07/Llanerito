@@ -29,25 +29,30 @@
 
  .informationCollage p {
      margin: 0 0 20px 0;
+     text-align: center;
+ }
+
+ .listCollage {
+    align-items: center;
  }
 
 
  .listCollage ul {
      margin: 25px;
+     align-items: center;
  }
 
  .listCollage ul li {
      list-style: none;
      padding: 15px;
-     text-align: left;
      display: flex;
-     justify-content: start;
-     align-items: center;
+
  }
 
  .listCollage ul li i {
      margin-right: 15px;
  }
+
 
  .bx-check {
      background: #00bb2d;
@@ -177,6 +182,11 @@
          width: 90%;
          margin: 0;
          padding: 0 20px;
+     }
+
+     .listCollage ul li {
+        height: max-content;
+        align-items: center;
      }
 
      
